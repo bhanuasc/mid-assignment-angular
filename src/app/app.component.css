@@ -1,0 +1,56 @@
+nav {
+  background-color: rgb(222, 222, 222);
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 10px 0; /* Adjust padding as needed */
+  padding-right: 70px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between cards as needed */
+  justify-content: center;
+}
+
+.card-container .p-card {
+  width: 300px; /* Set a fixed width for all cards */
+  height: 400px; /* Set a fixed height for all cards */
+  display: flex;
+  flex-direction: column;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Other styles for your navbar */
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Adjust gap between links */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Optional styles for active link */
+nav ul li a.active {
+  font-weight: bold;
+  color: red;
+}
