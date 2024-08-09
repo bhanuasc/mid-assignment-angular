@@ -61,7 +61,7 @@ describe('AppComponent', () => {
   //   expect(location.path()).toBe('/');
   // });
 
-  fit('checking for About Us Route', async () => {
+  it('checking for About Us Route', async () => {
     let links = debugElement.queryAll(By.css('.aboutclass'))
     links[0].nativeElement.click()
     await fixture.whenStable().then(() => {
@@ -70,19 +70,29 @@ describe('AppComponent', () => {
     });
   });
 
-  fit('checking for carres route',async()=>{
-    let links = debugElement.queryAll(By.css('.carrers'))
+  it('checking for Home Route', async () => {
+    let links = debugElement.queryAll(By.css('.homeclass'))
     links[0].nativeElement.click()
     await fixture.whenStable().then(() => {
-      expect(location.path()).toBe('/careers')
+      expect(location.path()).toBe('/home');
+
+    });
+  });
+
+
+  it('checking for resources route',async()=>{
+    let links = debugElement.queryAll(By.css('.resourcesclass'))
+    links[0].nativeElement.click()
+    await fixture.whenStable().then(() => {
+      expect(location.path()).toBe('/resources')
     })
   });
 
-  fit('checking for login route',async()=>{
-    let links = debugElement.queryAll(By.css('.login'))
+  it('checking for contact us route',async()=>{
+    let links = debugElement.queryAll(By.css('.contactclass'))
     links[0].nativeElement.click()
     await fixture.whenStable().then(() => {
-      expect(location.path()).toBe('/login')
+      expect(location.path()).toBe('/contactus')
     })
   });
 

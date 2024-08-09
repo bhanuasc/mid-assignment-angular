@@ -2,15 +2,17 @@ import { Component } from '@angular/core';
 import { ContactService } from '../../contact.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from "../footer/footer.component";
  
 @Component({
   selector: 'app-contactus',
   standalone: true,
-  imports: [CommonModule,FormsModule],
+  imports: [CommonModule, FormsModule, FooterComponent],
   templateUrl: './contactus.component.html',
   styleUrl: './contactus.component.css'
 })
 export class ContactusComponent {
+  
   formData = {
     name: '',
     email: '',
@@ -18,6 +20,7 @@ export class ContactusComponent {
     message: ''
   };
   message: string | null = null;
+  contactForm: any;
  
   constructor(private contactService: ContactService) { }
  
