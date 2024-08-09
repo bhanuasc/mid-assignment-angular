@@ -17,12 +17,12 @@ This Angular project features a basic structure with Home, About Us, Resources, 
     git clone https://github.com/bhanuasc/mid-assignment-angular.git
 
 3. **Install dependencies:**
-```Bash
+   ```bash
     cd your-project
     npm install
-    
+
 4. **Development server:**
-```Bash
+   ```bash
     ng serve
 
 5. **Configuration:**
