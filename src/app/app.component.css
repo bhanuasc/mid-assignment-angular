@@ -1,10 +1,23 @@
-nav {
-  background-color: rgb(222, 222, 222);
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  padding: 10px 0; /* Adjust padding as needed */
-  padding-right: 70px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  background-color: #A2D3E2; /* Light sky blue background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: fixed; /* Fixes the navbar at the top of the screen */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures navbar is above other content */
 }
 
 .card-container {
@@ -27,30 +40,101 @@ body, html {
   padding: 0;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* Other styles for your navbar */
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F7F8FA;
 }
 
-
-nav ul {
-  list-style: none;
+.navbar {
+  
   display: flex;
-  gap: 20px; /* Adjust gap between links */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #a1d2e6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-family: sans-serif;
-  font-size: 16px; /* Adjust font size as needed */
+/* Logo Styling */
+.navbar-logo {
+  display: flex;
+  align-items: center;
 }
 
-/* Optional styles for active link */
-nav ul li a.active {
+.navbar-logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-logo span {
+  font-size: 20px;
   font-weight: bold;
-  color: red;
+  color: #1E2A3B;
+}
+
+.navbar-logo span span {
+  color: #6C63FF; /* Theme color */
+}
+
+/* Navigation Links Styling */
+.navbar-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links ul li {
+  margin: 0 15px;
+}
+
+.navbar-links ul li a {
+  text-decoration: none;
+  color: #1E2A3B;
+  font-size: 16px;
+  position: relative;
+}
+
+.navbar-links ul li a:hover,
+.navbar-links ul li a.active {
+  color: #6C63FF;
+}
+
+/* Sign In Button Styling */
+.navbar-signin .signin-button {
+  background-color: #6C63FF;
+  color: #FFFFFF;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.signin-button .user-icon {
+  margin-left: 5px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar-links ul {
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      margin: 10px 0;
+  }
+
+  .navbar-signin {
+      margin-top: 15px;
+  }
 }

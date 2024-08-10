@@ -1,5 +1,6 @@
-<div class="contact">
-   
+<div class="contact-container">
+  <div class="contact">
+    <br>
     <h2>Contact Us</h2>
     <form (ngSubmit)="sendEmail()" #contactForm="ngForm">
       <div class="form-group">
@@ -22,4 +23,9 @@
     </form>
     <p *ngIf="message">{{ message }}</p>
   </div>
-
+  
+  <div class="info-section">
+    <h3>Requesting a Movie</h3>
+    <p>If you have a specific movie in mind that you'd like us to add, please provide the movie name in the form and any additional feedback.</p>
+  </div>
+</div>

@@ -1,15 +1,31 @@
 
-<nav>
-
-  <ul class="navbar">
-    <li><a routerLink="home" class="homeclass" routerLinkActive="active">HOME</a></li>
-    <li><a routerLink="aboutus" class="aboutclass" routerLinkActive="active">ABOUT US</a></li>
-    <li><a routerLink="contactus" class="contactclass" routerLinkActive="active">CONTACT US</a></li>
-    <li><a routerLink="resources" class="resourcesclass" routerLinkActive="active">RESOURCE</a></li>
-  </ul>
-</nav>
-
-<br><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/003/282/813/original/cloud-and-sun-icon-or-logo-vector.jpg" alt="Logo">
+            <span>MovieShow</span>
+        </div>
+        <nav class="navbar-links">
+            <ul>
+                <li><a routerLink="home" class="homeclass" routerLinkActive="active">HOME</a></li>
+                <li><a routerLink="aboutus" class="aboutclass" routerLinkActive="active">ABOUT US</a></li>
+                <li><a routerLink="contactus" class="contactclass" routerLinkActive="active">CONTACT US</a></li>
+                <li><a routerLink="resources" class="resourcesclass" routerLinkActive="active">RESOURCE</a></li>
+            </ul>
+        </nav>
+        <div class="navbar-signin">
+            <a href="#" class="signin-button">Sign In <span class="user-icon">👤</span></a>
+        </div>
+    </header>
+</body>
+</html>
 
 
 

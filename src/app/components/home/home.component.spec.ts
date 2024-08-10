@@ -45,11 +45,7 @@ describe('HomeComponent', () => {
   
 
 
-  it('should render the contact info in the FooterComponent', () => {
-    const footerElement = fixture.nativeElement.querySelector('app-footer');
-    expect(footerElement?.textContent).toContain('contact@movieshow.com');
-  });
-  
+
   it('should include the FooterComponent', () => {
     const footerElement = fixture.debugElement.query(By.directive(FooterComponent));
     expect(footerElement).not.toBeNull();

@@ -38,7 +38,7 @@ export class ResourcesComponent {
     {
       id: 5,
       title: 'The Shawshank Redemption',
-      description: 'The story of a man sentenced to life in prison who forms an unlikely friendship and seeks redemption.',
+      description: 'The story of a man sentenced  unlikely friendship and seeks redemption.',
       imageUrl: 'https://t3.ftcdn.net/jpg/01/67/91/72/360_F_167917256_66v0N9dBWpatv3KY3biYET8spHe0xtIt.jpg'
     },
     {

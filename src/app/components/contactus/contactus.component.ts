@@ -3,11 +3,12 @@ import { ContactService } from '../../contact.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from "../footer/footer.component";
+import { ReactiveFormsModule } from '@angular/forms';
  
 @Component({
   selector: 'app-contactus',
   standalone: true,
-  imports: [CommonModule, FormsModule, FooterComponent],
+  imports: [CommonModule, FormsModule, FooterComponent,ReactiveFormsModule],
   templateUrl: './contactus.component.html',
   styleUrl: './contactus.component.css'
 })
